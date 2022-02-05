@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+    <title>
+        thanks
+    </title>
+
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #222;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	color: #58A8AB;
+	font-size: 8rem;
+	font-family: Open Sans;
+}
+
+.animateText span {
+	opacity: 0;
+	
+	transition: all 0.5s ease;
+	
+
+}
+
+span.fade {
+	opacity: 1;
+	
+
+}
+    </style>
+</head>
+
+<body>
+
+    <section class="header">
+        <h1 class="animateText">Thank you kholoud</h1>
+    </section>
+
+<script>
+
+
+const text = document.querySelector(".animateText");
+const splitText = text.textContent.split("");
+
+text.textContent = "";
+
+splitText.forEach((l, i) => {
+	text.innerHTML += "<span>" + splitText[i] + "</span>"
+});
+
+let char = 0;
+let timer = setInterval(animChar, 120);
+
+function animChar() {
+	const span = text.querySelectorAll("span")[char];
+	span.classList.add("fade");
+	char++;
+	
+	if (char === splitText.length) {
+		complete();
+		return;
+	}
+}
+
+function complete() {
+	clearInterval(timer);
+	timer = null;  
+}
+</script>
+</body>
+
+</html>

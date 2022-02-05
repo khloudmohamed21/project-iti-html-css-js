@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>home</title>
+</head>
+<body>
+    <section1>
+    <nav>
+        <div class="logo">S<span>cube</span></div>
+        <ul class="menu" id="menu">
+            <li class="menu-item black active"><a href="index.html">Home</a></li>
+            <li class="menu-item black"><a href="about.html">About</a></li>
+            <li class="menu-item black"><a href="courses.html">courses</a></li>
+            <li class="menu-item white"><a href="login.html">login</a></li>
+            <li class="menu-item white"><a href="register.html">Rgister</a></li>
+        </ul>
+        <div class="menu-button" id="menu-button" onclick="menuToggle()"></div>
+    </nav>
+    <main>
+        <div class="info active">
+            <h1>Study Room</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dolorum repudiandae temporibus, sed ab cupiditate saepe quia fugiat culpa officia corrupti totam recusandae omnis, minus voluptate, eligendi veritatis dignissimos voluptas!</p>
+            <a href="#" style="color: black;">Read More</a>
+        </div>
+        <div class="img active">
+            <img src="img/Capture33.PNG" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-icons">
+            <ul class="social-network">
+                <li><img src="img/f.png" alt=""></li>
+                <li><img src="img/t.png" alt=""></li>
+                <li><img src="img/i.png" alt=""></li>
+            </ul>
+            <ul class="page-controller">
+                <li> <img src="img/left.png" alt=""> </li>
+                <li> <img src="img/right.png" alt=""> </li>
+            </ul>
+        </div>
+       
+    </footer>
+</section1>
+</body>
+<script>
+    function menuToggle(){
+        let menu = document.getElementById("menu");
+        menu.classList.toggle("display");
+        let menuButton = document.getElementById("menu-button");
+        menuButton.classList.toggle("active");
+    }
+</script>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>about</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">S<span>cube</span></div>
+        <ul class="menu" id="menu">
+            <li class="menu-item black"><a href="index.html">Home</a></li>
+            <li class="menu-item black"><a href="about.html">About</a></li>
+            <li class="menu-item black active"><a href="courses.html">courses</a></li>
+            <li class="menu-item black"><a href="login.html">login</a></li>
+            <li class="menu-item black"><a href="register.html">Rgister</a></li>
+        </ul>
+        <div class="menu-button" id="menu-button" onclick="menuToggle()"></div>
+    </nav>
+
+
+<br>
+<div class="Courses-section">
+    <h1 style="color: black;">Recent Courses</h1>
+  </div>
+  
+  <br><br>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="img/4.jpg" alt="" style="width:100%">
+        <div class="container">
+          <h2>web Design</h2>
+          <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+          <p><button class="button">Start Now</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="img/8.jpg" alt="" style="width:100%">
+        <div class="container">
+          <h2>android</h2>
+          <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+          <p><button class="button">Start Now</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="img/9.jpg" alt="" style="width:100%" >
+        <div class="container">
+          <h2>I-Learning</h2>
+          <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+          <p><button class="button">Start Now</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="img/666.webp" alt="" style="width:100%">
+        <div class="container">
+          <h2>web Design</h2>
+          <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+          <p><button class="button">Start Now</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="img/555.webp" alt="" style="width:100%">
+        <div class="container">
+          <h2>android</h2>
+          <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+          <p><button class="button">Start Now</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="img/888.webp" alt="" style="width:100%">
+        <div class="container">
+          <h2>I-Learning</h2>
+          <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+          <p><button class="button">Start Now</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<script src="script.js"></script>
+</body>
+<script>
+    function menuToggle(){
+        let menu = document.getElementById("menu");
+        menu.classList.toggle("display");
+        let menuButton = document.getElementById("menu-button");
+        menuButton.classList.toggle("active");
+    }
+</script>
+
+</html>
